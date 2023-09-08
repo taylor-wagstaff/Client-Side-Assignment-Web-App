@@ -5,11 +5,13 @@ export default function Navbar() {
   return (
     <nav>
       <div className="nav-container">
+        <div className="heading">
+          <p>WORLDS DAY PROGRESS</p>
+        </div>
         <div className="links-container">
-       
-          <h1>WORLDS DAY PROGRESS</h1>
-        
-          <Link href="/" className='home-style'>HOME</Link>
+          <Link href="/" className="home-style">
+            HOME
+          </Link>
         </div>
       </div>
     </nav>
