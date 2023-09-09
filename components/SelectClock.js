@@ -1,13 +1,11 @@
-import './Clock.css'
+import './SelectClock.css'
 import React, { useState, useEffect } from 'react'
 import ProgressBar from './ProgressBar'
 
-function Clock({ placeName, region }) {
+function SelectClock({ placeName, region }) {
   const [time, setTime] = useState('')
   const [timeProgress, setTimeProgress] = useState(0)
-  const [location, setLocation] = useState(region)
 
-  //  Chat GPT was used to access timezone information
   const getTimeInTimeZone = (timeZone) => {
     return new Intl.DateTimeFormat('en-US', {
       hour: '2-digit',
@@ -21,11 +19,11 @@ function Clock({ placeName, region }) {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTime(getTimeInTimeZone(location))
+      setTime(getTimeInTimeZone(region))
     }, 1000)
 
     return () => clearInterval(interval)
-  }, [location])
+  }, [region])
 
   useEffect(() => {
     let hour = parseInt(time.slice(0, 2), 10)
@@ -33,7 +31,7 @@ function Clock({ placeName, region }) {
     let amOrPm = time.slice(-2)
 
     if (amOrPm === 'PM' && hour !== 12) {
-      hour += 12 // Convert to 24-hour format
+      hour += 12
     }
     if (amOrPm === 'AM' && hour === 12) {
       hour = 0
@@ -44,12 +42,6 @@ function Clock({ placeName, region }) {
 
     setTimeProgress(Math.round(progress))
   }, [time])
-
-  const handleChange = (e) => {
-    setLocation(e.target.value)
-  }
-
-  const locationName = location.split('/').pop()
 
   return (
     <div className="clock">
@@ -67,4 +59,4 @@ function Clock({ placeName, region }) {
   )
 }
 
-export default Clock
+export default SelectClock

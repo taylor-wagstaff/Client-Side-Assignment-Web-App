@@ -1,26 +1,19 @@
-
-.container  {
-  height: 100px;
+.container {
+  height: 300px;
   width: 100%;
   background-color: white;
   margin: 50;
-
-  
 }
 
 .label-container {
-
+  height: 100%; 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-.label  {
-  color:black;
+.label {
+  color: blue;
   font-size: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+
 }

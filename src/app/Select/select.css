@@ -1,0 +1,45 @@
+
+.clock-header {
+  
+  background-color: black;
+  color: white;
+
+}
+
+
+.location-select select {
+  width: 100%;
+  height: 100px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 20px outset lightgray;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  appearance: none; /* This will remove the default styling in some browsers */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 2rem;
+}
+
+.location-select-heading {
+  border: 20px outset lightgray;
+
+  font-size: 2rem;
+}
+
+.location-select-heading p{
+
+  margin-left:0.5rem; 
+}
+
+
+.location-select select:hover {
+  background-color: black;
+  color: white;
+}
+
+.location-select select:focus {
+  outline: none;
+  
+}
+

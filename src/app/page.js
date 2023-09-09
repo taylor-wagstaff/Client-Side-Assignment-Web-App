@@ -62,6 +62,12 @@ export default function Home() {
         <Link href="/LA" className={`${styles.linkStyle} ${styles.laBorder}`}>
           LOS ANGELES
         </Link>
+        <Link
+          href="/Select"
+          className={`${styles.linkStyle} ${styles.selectBorder}`}
+        >
+          +
+        </Link>
       </div>
     </main>
   )
