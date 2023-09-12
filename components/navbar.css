@@ -1,45 +1,38 @@
-.nav-container {
-  display: grid;
-  grid-template-columns: 3fr 1fr; 
 
-  height: 200px;
-  background-color: rgb(237, 237, 237);
 
-  color: black;
+.links-container{
+  gap: 1rem;
+  display: flex;  
+  flex-direction: row; 
+  background-color: white;
+
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+
+
+  padding: 1rem;
+  
+  width: min-content;
 }
-
-.heading {
-  color: blue;
-  background-color:forestgreen;
-  /* border: 20px outset darkgrey; */
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 3rem;
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-}
-
-
 
 .home-style {
   color: black;
   display: flex;  
-  align-items: center;  
-  justify-content: center; 
-  height: 100%;  
-  width: 100%;
+  flex-direction: row; 
+
   text-decoration: none;
-  box-sizing: border-box; 
+ 
   transition: background-color 0.3s; 
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 0;
   
-  border: 20px outset lightgray; 
+
 }
 
 .home-style:hover {
-  background-color: darkgrey; 
+
   color: blue;
-  border: 20px inset lightgrey; 
+  
 
 }

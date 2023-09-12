@@ -12,7 +12,7 @@
   height: 100px;
   padding: 5px 10px;
   font-size: 16px;
-  border: 20px outset lightgray;
+  border: 2px solid black;
   border-radius: 4px;
   background-color: #f9f9f9;
   appearance: none; /* This will remove the default styling in some browsers */
@@ -22,7 +22,7 @@
 }
 
 .location-select-heading {
-  border: 20px outset lightgray;
+ 
 
   font-size: 2rem;
 }
@@ -34,8 +34,8 @@
 
 
 .location-select select:hover {
-  background-color: black;
-  color: white;
+  background-color: darkgrey;
+  color: blue;
 }
 
 .location-select select:focus {

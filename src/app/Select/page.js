@@ -18,7 +18,7 @@ function Select() {
     <div className="clock">
       <div className="location-select">
         <div className='location-select-heading'>
-          <p>CHOOSE ANOTHER LOCATION?</p>
+          <p>Choose Another Location?</p>
         </div>
 
         <select value={location} onChange={handleChange}>

@@ -26,7 +26,9 @@ const ProgressBar = ({ progress }) => {
     backgroundImage: generateGradient(percentage),
     overFlow: 'hidden',
     transition: 'width 2s ease-in-out',
-    border: '20px inset lightgrey',
+    border: '2px solid black',
+    borderRadius: '3rem',
+
   }
 
   return (
