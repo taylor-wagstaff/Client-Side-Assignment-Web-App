@@ -1,4 +1,10 @@
 
+.clock{
+
+  padding: 0.5rem;
+}
+
+
 .clock-header {
   font-size: 3rem;
   background-color: white;

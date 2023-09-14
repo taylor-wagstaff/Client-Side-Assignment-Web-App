@@ -6,14 +6,14 @@ export default function Navbar() {
     <nav>
       <div className="nav-container">
         <div className="links-container">
-          <Link href="/" className="home-style">
-            HOME
+          <Link href="/" className="link-style">
+            Home
           </Link>
-          <Link href="/" className="home-style">
-            CONTACT
+          <Link href="/About" className="link-style">
+            About
           </Link>
-          <Link href="/" className="home-style">
-            ABOUT
+          <Link href="/Contact" className="link-style">
+            Contact
           </Link>
         </div>
       </div>

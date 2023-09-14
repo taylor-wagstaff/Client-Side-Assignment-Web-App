@@ -1,0 +1,39 @@
+
+
+footer {
+  background-color: black;
+  color: white;
+  height: 200px;
+  padding: 20px 0;
+}
+
+.footer-container {
+
+  margin: 0 auto;
+  text-align: center; /* Center aligning the text */
+  padding: 0 15px; /* Padding on the sides for smaller screens */
+}
+
+address {
+  font-style: normal; /* Address has an italic style by default, this makes it normal */
+  margin-bottom: 20px;
+}
+
+.contactInfo, .footerLinks {
+  margin: 15px 0;
+}
+
+.contactInfo a, .footerLinks a {
+  color: #fff; /* White link color */
+  margin: 0 10px;
+  text-decoration: none; /* Removing default underlines */
+}
+
+.contactInfo a:hover, .footerLinks a:hover {
+  text-decoration: underline; /* Adding underline on hover */
+}
+
+/* For better spacing between links */
+.footerLinks a:not(:last-of-type) {
+  margin-right: 20px;
+}

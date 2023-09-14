@@ -6,9 +6,10 @@
   flex-direction: row; 
   background-color: white;
 
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+
+  border-bottom: 2px solid blue;
+  /* border-left: 2px solid black; */
+  border-right: 2px solid blue;
 
 
   padding: 1rem;
@@ -16,8 +17,8 @@
   width: min-content;
 }
 
-.home-style {
-  color: black;
+.link-style {
+  color: blue;
   display: flex;  
   flex-direction: row; 
 
@@ -30,9 +31,9 @@
 
 }
 
-.home-style:hover {
+.link-style:hover {
 
-  color: blue;
-  
+  color: white;
+  background-color: blue;
 
 }

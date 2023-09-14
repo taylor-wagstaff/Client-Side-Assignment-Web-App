@@ -52,10 +52,10 @@ export default function Home() {
     <main>
       <div className={styles.formContainer}>
         <form onSubmit={handleFormSubmit}>
-          <label htmlFor="name">Add Friend&apos;s Name to Place:</label>
+          <label htmlFor="name">Friend:</label>
           <input type="text" id="name" name="name" />
 
-          <label htmlFor="places">Choose Place:</label>
+          <label htmlFor="places">Place:</label>
           <select name="places" id="places">
             <option value="AUCKLAND">AUCKLAND</option>
             <option value="PARIS">PARIS </option>

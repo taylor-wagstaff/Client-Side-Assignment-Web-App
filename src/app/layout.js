@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from '../../components/navbar'
 import Header from '../../components/header'
+import Footer from '../../components/footer'
 
 export const metadata = {
   title: 'Time Mates',
@@ -14,10 +15,8 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         <Navbar />
-
         <div className="main">{children}</div>
-
-        <div className="footer"></div>
+        <Footer />
       </body>
     </html>
   )
