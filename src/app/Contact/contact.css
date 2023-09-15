@@ -14,7 +14,7 @@
 
 .card_contact {
   background-color:white;
-  border-radius: 3rem;
+  
   border: 2px solid black; 
   padding-left: 2rem;
   padding-right: 2rem;
@@ -35,7 +35,10 @@
 }
 
 
+textarea {
 
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
 

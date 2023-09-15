@@ -10,18 +10,18 @@ function Contact() {
 
           <form className="form-items">
             <div>
-              <label htmlFor="name">Name:</label>
-              <input type="text" id="name" name="name" />
+             
+              <input type="text" placeholder="Name" id="name" name="name" />
             </div>
 
             <div>
-              <label htmlFor="email">Email:</label>
-              <input type="email" id="email" name="email" />
+             
+              <input type="email" placeholder="Email" id="email" name="email" />
             </div>
 
             <div>
-              <label htmlFor="message">Message:</label>
-              <textarea id="message" name="message" rows="4"></textarea>
+        
+              <textarea id="message" placeholder="Message" name="message" rows="4"></textarea>
             </div>
 
             <div>

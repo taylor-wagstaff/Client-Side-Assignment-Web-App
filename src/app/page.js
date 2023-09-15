@@ -21,19 +21,20 @@ export default function Home() {
     LOSANGELES: '',
   })
 
+  // Chat GPT
   useEffect(() => {
-    // Load from localStorage only once after the component mounts
     const savedNames = localStorage.getItem('cityNames')
     if (savedNames) {
       setCityNames(JSON.parse(savedNames))
     }
-  }, []) // Empty dependency array ensures this runs once after mounting
+  }, [])
 
+  // Chat GPT
   useEffect(() => {
-    // Save to localStorage whenever cityNames changes
     localStorage.setItem('cityNames', JSON.stringify(cityNames))
   }, [cityNames])
 
+  // Chat GPT
   const handleFormSubmit = (e) => {
     e.preventDefault()
     const Name = e.target.name.value
@@ -52,25 +53,34 @@ export default function Home() {
     <main>
       <div className={styles.formContainer}>
         <form onSubmit={handleFormSubmit}>
-          <label htmlFor="name">Friend:</label>
-          <input type="text" id="name" name="name" />
+          <div>
+            <label htmlFor="name">Friend:</label>
+            <input type="text" id="name" name="name" />
+          </div>
 
-          <label htmlFor="places">Place:</label>
-          <select name="places" id="places">
-            <option value="AUCKLAND">AUCKLAND</option>
-            <option value="PARIS">PARIS </option>
-            <option value="BERLIN">BERLIN</option>
-            <option value="MOSCOW">MOSCOW</option>
-            <option value="NEWYORK">NEW YORK</option>
-            <option value="SYDNEY">SYDNEY</option>
-            <option value="NEWDELHI">NEW DELHI</option>
-            <option value="LONDON">LONDON</option>
-            <option value="LOSANGELES">LOS ANGELES</option>
-          </select>
-
-          <button className={styles.submitButton} value="Submit" type="submit">
-            Add
-          </button>
+          <div>
+            <label htmlFor="places">Place:</label>
+            <select name="places" id="places">
+              <option value="AUCKLAND">AUCKLAND</option>
+              <option value="PARIS">PARIS </option>
+              <option value="BERLIN">BERLIN</option>
+              <option value="MOSCOW">MOSCOW</option>
+              <option value="NEWYORK">NEW YORK</option>
+              <option value="SYDNEY">SYDNEY</option>
+              <option value="NEWDELHI">NEW DELHI</option>
+              <option value="LONDON">LONDON</option>
+              <option value="LOSANGELES">LOS ANGELES</option>
+            </select>
+            <button
+              className={styles.submitButton}
+              value="Submit"
+              type="submit"
+            >
+              Add
+            </button>
+          </div>
+      
+      
         </form>
       </div>
 
@@ -79,58 +89,68 @@ export default function Home() {
           href="/Auckland"
           className={`${styles.linkStyle} ${styles.aucklandBorder}`}
         >
-          AUCKLAND <p className={styles.friendsText}>{cityNames.AUCKLAND}</p>
+          <div>AUCKLAND</div>
+          <div className={styles.friendsText}>{cityNames.AUCKLAND}</div>
         </Link>
         <Link
           href="/Paris"
           className={`${styles.linkStyle} ${styles.parisBorder}`}
         >
-          PARIS <p className={styles.friendsText}>{cityNames.PARIS}</p>
+          <div>PARIS</div>
+          <div className={styles.friendsText}>{cityNames.PARIS}</div>
         </Link>
         <Link
           href="/Berlin"
           className={`${styles.linkStyle} ${styles.berlinBorder}`}
         >
-          BERLIN  <p className={styles.friendsText}>{cityNames.BERLIN}</p>
+          <div>BERLIN</div>
+          <div className={styles.friendsText}>{cityNames.BERLIN}</div>
         </Link>
         <Link
           href="/Moscow"
           className={`${styles.linkStyle} ${styles.moscowBorder}`}
         >
-          MOSCOW  <p className={styles.friendsText}>{cityNames.MOSCOW}</p>
+          <div>MOSCOW</div>
+          <div className={styles.friendsText}>{cityNames.MOSCOW}</div>
         </Link>
         <Link
           href="/NewYork"
           className={`${styles.linkStyle} ${styles.nyBorder}`}
         >
-          NEW YORK <p className={styles.friendsText}>{cityNames.NEWYORK}</p>
+          <div>NEW YORK</div>
+          <div className={styles.friendsText}>{cityNames.NEWYORK}</div>
         </Link>
         <Link
           href="/Sydney"
           className={`${styles.linkStyle} ${styles.sydneyBorder}`}
         >
-          SYDNEY <p className={styles.friendsText}>{cityNames.SYDNEY}</p>
+          <div>SYDNEY</div>
+          <div className={styles.friendsText}>{cityNames.SYDNEY}</div>
         </Link>
         <Link
           href="/NewDelhi"
           className={`${styles.linkStyle} ${styles.newdelhiBorder}`}
         >
-          NEW DELHI <p className={styles.friendsText}>{cityNames.NEWDELHI}</p>
+          <div>NEW DELHI</div>
+          <div className={styles.friendsText}>{cityNames.NEWDELHI}</div>
         </Link>
         <Link
           href="/Beijing"
           className={`${styles.linkStyle} ${styles.beijingBorder}`}
         >
-          BEIJING <p className={styles.friendsText}>{cityNames.BEIJING}</p>
+          <div>BEIJING</div>
+          <div className={styles.friendsText}>{cityNames.BEIJING}</div>
         </Link>
         <Link
           href="/London"
           className={`${styles.linkStyle} ${styles.londonBorder}`}
         >
-          LONDON <p className={styles.friendsText}>{cityNames.LONDON}</p>
+          <div>LONDON</div>
+          <div className={styles.friendsText}>{cityNames.LONDON}</div>
         </Link>
         <Link href="/LA" className={`${styles.linkStyle} ${styles.laBorder}`}>
-          LOS ANGELES <p className={styles.friendsText}>{cityNames.LOSANGELES}</p>
+          <div>LOS ANGELES</div>
+          <div className={styles.friendsText}>{cityNames.LOSANGELES}</div>
         </Link>
         <Link
           href="/Select"
